@@ -16,6 +16,10 @@ body {
   background-color: aliceblue;
 }
 
+h1,h3{
+  text-align: center;
+}
+
 a{
   color: black;
 }
@@ -26,6 +30,10 @@ a:hover{
 
 #spotify:hover{
   color: green;
+}
+
+#bandcamp:hover{
+  color:blue;
 }
 
 .navBar {

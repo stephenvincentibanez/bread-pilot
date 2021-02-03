@@ -7,7 +7,7 @@ import {FaBandcamp} from 'react-icons/fa'
 
 const Linkbar = () => {
     return (
-        <div>
+        <div className="links">
             <a href="https://itunes.apple.com/us/artist/bread-pilot/1029036444">
                 <SiApplemusic/>
             </a>
@@ -20,7 +20,7 @@ const Linkbar = () => {
             <a href="https://www.instagram.com/bread_pilot/?hl=en">
                 <SiInstagram/>         
             </a>
-            <a href="https://breadpilotband.bandcamp.com/">
+            <a href="https://breadpilotband.bandcamp.com/" id="bandcamp">
                 <FaBandcamp/>
             </a>
         </div>
