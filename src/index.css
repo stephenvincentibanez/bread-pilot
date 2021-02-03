@@ -16,13 +16,26 @@ body {
   background-color: aliceblue;
 }
 
-.navBar {
-  display: flex;
+a{
+  color: black;
 }
 
-/* .links{
+a:hover{
+  color: red;
+}
+
+#spotify:hover{
+  color: green;
+}
+
+.navBar {
+  display: flex;
   justify-content: center;
-} */
+}
+
+.links{
+  justify-content: center;
+}
 
 svg {
   width: 200px;

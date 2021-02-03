@@ -3,7 +3,8 @@ import React from 'react';
 const Booking = () => {
     return (
         <div>
-            <h1>Contact</h1>
+            <h1>Booking</h1>
+            <p>Email: breadpilotband@gmail.com</p>
         </div>
     );
 }

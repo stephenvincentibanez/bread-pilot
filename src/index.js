@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Booking from './components/Booking'
+import Live from './components/Live'
+import Notfound from './components/Notfound'
+import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom'
+
+const routing = (
+  <Router>
+    <div>
+      <ul>
+          <Link to="/">Home</Link>
+          <Link to="/booking">Booking</Link>
+          <Link to="live">Live</Link>
+      </ul>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/booking" component={Booking} />
+        <Route path="/live" component={Live} />
+        <Route component={Notfound} />
+      </Switch>
+    </div>
+  </Router>
+)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App routing={routing}/>,
   document.getElementById('root')
 );
 
