@@ -11,7 +11,7 @@ import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom'
 const routing = (
   <Router>
     <div>
-      <ul>
+      <ul className="nav">
           <Link to="/">Home</Link>
           <Link to="/booking">Booking</Link>
           <Link to="live">Live</Link>
@@ -27,7 +27,9 @@ const routing = (
 )
 
 ReactDOM.render(
-    <App routing={routing}/>,
+  <React.StrictMode>
+    <App routing={routing}/>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
