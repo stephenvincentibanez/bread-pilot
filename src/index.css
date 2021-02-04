@@ -47,7 +47,16 @@ a:hover{
 }
 
 .links{
+  display: flex;
+  position: relative;
   justify-content: center;
+  align-content: center;
+  bottom: 20px;
+}
+
+.link{
+  /* position: absolute; */
+  bottom: 20px;
 }
 
 svg {
