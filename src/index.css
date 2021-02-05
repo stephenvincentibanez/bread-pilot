@@ -43,20 +43,15 @@ a:hover{
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  font-size: 30px;
 }
 
 .links{
   display: flex;
-  position: relative;
   justify-content: center;
   /* align-items: flex-end; */
   /* bottom: 20px; */
-}
-
-.link{
-  /* position: absolute; */
-  bottom: 20px;
 }
 
 svg {

@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       <h1>Bread Pilot</h1>
+      {/* bread pilot logo */}
       <Navbar/>
       <Linkbar/>
     </div>

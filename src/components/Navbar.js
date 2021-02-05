@@ -10,11 +10,11 @@ const Navbar = () => {
         <div>
             <Router>
                 <div>
-                <ul className="nav">
+                <p className="nav">
                     <Link to="/">Home</Link>
                     <Link to="/booking">Booking</Link>
                     <Link to="live">Live</Link>
-                </ul>
+                </p>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/booking" component={Booking} />
