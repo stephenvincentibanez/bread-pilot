@@ -1,6 +1,5 @@
 import './App.css';
 import Linkbar from './components/Linkbar'
-import Navbar from './components/Navbar'
 
 function App(props) {
   return (

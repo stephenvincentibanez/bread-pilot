@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Booking from './components/Booking'
 import Live from './components/Live'
 import Notfound from './components/Notfound'
+import Home from './components/Home'
 import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom'
 
 const routing = (
@@ -17,7 +18,7 @@ const routing = (
           <Link to="live">Live</Link>
       </ul>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Home} />
         <Route path="/booking" component={Booking} />
         <Route path="/live" component={Live} />
         <Route component={Notfound} />
@@ -28,7 +29,8 @@ const routing = (
 
 ReactDOM.render(
   <React.StrictMode>
-    <App routing={routing}/>
+      <App routing={routing}/>
+    {/* <App/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
